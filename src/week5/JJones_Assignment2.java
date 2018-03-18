@@ -131,15 +131,14 @@ public class JJones_Assignment2 extends javax.swing.JFrame {
     private void input1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_input1ActionPerformed
-public static double answer(double base,double exponent){
-  
-if (exponent == 0) {
-        return 1;
-    }else{
-        return base*Math.pow(base,exponent-1);
-       }
-    }
-
+//public static double answer(double base,double exponent){
+//  
+//if (exponent == 0) {
+//        return 1;
+//    }else{
+//        return base*Math.pow(base,exponent-1);
+//       }
+//    }
 
     private void CalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalculateActionPerformed
         // TODO add your handling code here: 
@@ -155,7 +154,7 @@ if (exponent == 0) {
         
        int i = 1;
     while(i <= exponent){
-output.setText(+ base + " to the exponent " + i + " = " + answer(base,exponent) + "\n");
+    output.setText(+ base + " to the exponent " + i + " = " + Math.pow(base,i) + "\n");
         i++;    
        }
 
